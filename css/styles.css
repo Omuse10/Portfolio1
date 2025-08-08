@@ -620,6 +620,37 @@ footer {
   .btn-outline {
     margin-left: 0;
   }
+
+  .success-message {
+  position: flex;
+  top: 3%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 0;
+  border-radius: 5px;
+  z-index: 1000;
+  text-align: center;
+  width: 40%; /* Responsive width */
+  max-width: 400px; /* Limit max width for larger screens */
+  font-size: 1rem; /* Default font size */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  .success-message {
+    font-size: 0.9rem; /* Adjust font size for smaller screens */
+    padding: 8px 16px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .success-message {
+    font-size: 0.8rem; /* Further adjust font size for very small screens */
+    padding: 6px 12px; /* Further adjust padding for very small screens */
+  }
+}
 }
 
 /* New Background Styles */
